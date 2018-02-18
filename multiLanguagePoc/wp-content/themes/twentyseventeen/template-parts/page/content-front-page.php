@@ -9,6 +9,11 @@
  */
 
 ?>
+<?php
+    echo "This text is not translated yet!<br />";
+    _e("welcome", "test");
+    echo "<br />".get_locale();
+ ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'twentyseventeen-panel ' ); ?> >
 
 	<?php if ( has_post_thumbnail() ) :

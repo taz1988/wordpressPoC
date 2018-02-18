@@ -29,3 +29,18 @@ function redirect()
 
 add_action( 'init', 'redirect');
 ```
+
+For translated constants:
+```
+load_theme_textdomain( 'test', get_template_directory().'/languages' );
+_e("welcome", "test");
+```
+
+# Useful Links
+* https://premium.wpmudev.org/blog/how-to-localize-a-wordpress-theme-and-make-it-translation-ready/
+* https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/
+* https://codex.wordpress.org/I18n_for_WordPress_Developers
+* https://developer.wordpress.org/themes/functionality/localization/
+* https://developer.wordpress.org/themes/functionality/internationalization/
+* https://codex.wordpress.org/Function_Reference
+* https://premium.wpmudev.org/blog/how-to-localize-a-wordpress-theme-and-make-it-translation-ready/

@@ -29,6 +29,9 @@ function redirect()
     }
 }
 
+
+
+
 add_action( 'init', 'redirect');
 /**
  * Twenty Seventeen only works in WordPress 4.7 or later.
@@ -52,7 +55,10 @@ function twentyseventeen_setup() {
 	 * If you're building a theme based on Twenty Seventeen, use a find and replace
 	 * to change 'twentyseventeen' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'twentyseventeen' );
+
+    echo get_template_directory().'/languages/' ;
+    var_dump(load_theme_textdomain( 'test', get_template_directory().'/languages' ));
+    ob_flush();
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
